@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daddy Long Legs</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #9118af; /* violet */
+        }
+        header {
+            background: #e57ea8; /* pink */
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #24003e;
+        }
+        main {
+            padding: 20px;
+            background: white;
+            max-width: 800px;
+            margin: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #67d9f5;
+            color: #0068de;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        h2 {
+            color: #0068de;
+        }
+        .highlight {
+            background-color: #e091f4; /* Light purple */
+        }
+        .info {
+            border: 1px solid #000000;
+            padding: 10px;
+            margin: 15px 0;
+        }
+        .inline {
+            display: inline;
+            color: #FF4500; /* Orange */
+        }
+        #iframeContainer {
+            display: none;
+            margin-top: 20px;
+            width: 100%;
+            height: 500px;
+            border: 1px solid #e57ea8;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function showPopup() {
+            alert("Did you know daddy long legs sometimes cannibalise each other?");
+        }
+        
+        function toggleIframe() {
+            const iframeContainer = document.getElementById("iframeContainer");
+            if (iframeContainer.style.display === "none" || iframeContainer.style.display === "") {
+                iframeContainer.style.display = "block";
+            } else {
+                iframeContainer.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Daddy Long Legs</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#characteristics">Characteristics</a>
+    <a href="#habitats">Habitats</a>
+    <a href="#facts">Fun Facts</a>
+    <a href="#quotes">Quotes from other spider enjoyers</a>
+    <a href="#pics">Cute pictures</a>
+    <a href="#contacts">Contacts</a>
+</nav>
+
+<main>
+    <h2 id="characteristics">Characteristics</h2>
+    <p>Daddy long legs, also known as harvestmen (creepy!), are cute and fascinating creatures. Some of their defining characteristics are:</p>
+    <ul>
+        <li><strong>Legs:</strong> Their legs are up to 10 times the length of their bodies (hence the long legs name).</li>
+        <li><strong>Body:</strong> Their bodies are typically round or oval.</li>
+        <li><strong>Eyes:</strong> Most have only two, though large, eyes.</li>
+    </ul>
+
+    <h2 id="habitats">Habitats</h2>
+    <p>Daddy long legs can be found in a variety of places:</p>
+    <div class="info">
+        <table border="1" style="width:100%; text-align:left;">
+            <tr>
+                <th>Habitat</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Houses</td>
+                <td>Warm and safe.</td>
+            </tr>
+            <tr>
+                <td>Gardens</td>
+                <td>Abundant plant matter to feed on.</td>
+            </tr>
+            <tr>
+                <td>Under rocks</td>
+                <td>Provides shelter and humidity.</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2 id="facts">Fun Facts</h2>
+    <p class="highlight">Here are some interesting facts about daddy long legs:</p>
+    <ol>
+        <li>They are not spiders. They are Opiliones.</li>
+        <li>Daddy long legs are harmless to (most) humans.</li>
+        <li>They primarily feed on decaying plant material, small insects and the dreams of small children.</li>
+    </ol>
+
+    <h2 id="quotes">Quotes from other spider enjoyers</h2>
+    <blockquote>
+        "Daddy long legs are very goofy."
+    </blockquote>
+    <blockquote>
+        "Daddy long legs is a very funny name."
+    </blockquote>
+    <blockquote>
+        "Although they are not real spiders, I enjoy them just the same."
+    </blockquote>
+
+    <h2 id="pics">Cute pictures</h2>
+    <img src="https://live-production.wcms.abc-cdn.net.au/c5103617b2a3f598d0c7911d814aa79c?impolicy=wcms_crop_resize&cropH=1117&cropW=1985&xPos=0&yPos=434&width=862&height=485" alt="Daddy Long Legs" style="width:100%; max-width:600px; border-radius: 5px;">
+    <img src="https://blog.nature.org/wp-content/uploads/2016/10/9327425637_60af2474ed_o.jpg" style="width:100%; max-width:600px; border-radius: 5px;">
+    <img src="https://blog.nature.org/wp-content/uploads/2016/10/17123743676_edea55c712_k.jpg" alt="Daddy Long Legs" style="width:100%; max-width:600px; border-radius: 5px;">
+
+     <!-- Button to trigger pop-up -->
+    <button onclick="showPopup()" style="margin-top: 20px; padding: 10px; background-color: #e57ea8; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Click for a fun fact!
+    </button>
+
+    <h2 id="contacts">Contacts</h2>
+    <p class="inline">Email: <a href="mailto:r1d1epressedem0@gmail.com">info@spiderlover.com</a></p>
+
+    <!-- Button to open isma.lv in iframe -->
+    <button onclick="toggleIframe()" style="margin-top: 10px; padding: 10px; background-color: #67d9f5; color: #0068de; border: none; border-radius: 5px; cursor: pointer;">
+        Open isma.lv
+    </button>
+
+    <!-- iFrame container for isma.lv -->
+    <iframe id="iframeContainer" src="https://isma.lv" style="width: 100%; height: 500px; border: none;"></iframe>
+
+</main>
+
+<footer>
+    <p>i love spiders:)</p>
+</footer>
+
+</body>
+</html>
+
